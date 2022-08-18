@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick Cordon">
+    <meta name="descrition" content="W3 Demo">
+    <title>W3 | Demo</title>
+
+    <!--In doc styling-->
+    <style>
+        /*in here w write CSS*/
+        /* Basic css set-up
+
+            selctor{
+                property:value;
+            }
+        valid selectors: tage type (body, h1, img), id names (wrapper, header,footer), class names (.bg-main)
+
+        */
+
+        body{
+            background-color: slategray;
+        }
+
+        div{
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+        }
+
+        #footer{ /*only applies to id footer */
+        
+            text-align: center;
+        }
+
+        #wrapper{
+            width:900px;
+            margin:auto;
+            background-color: rgb(135, 154, 173);
+        }
+
+        /*#main-content{
+            min-height: 1200px;
+        }*/
+
+        .bg-main{
+            background-color: aliceblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper"><!--holds all content on page-->
+
+        <!--header-->
+        <div id="header" class="bg-main">
+            
+            <h1> Erick Cordon - About Me</h1>
+
+
+
+        </div><!--/ #header-->
+
+        <!--Nav Bar - internal link------------------------------------------->
+        <div id="nav">
+            <!--external links-->
+            <a href="https://www.neit.edu/">Visit NEIT</a>
+
+            <!--internal links-->
+
+            <!--in page jump links-->
+
+
+        </div><!--/ #nav-->
+
+            <!--E-->
+
+
+
+        <!--Main Content ON page - only thing that changes from page to page!-->
+        <div id="main-content">
+            <h2 id="about" class="bg-main">Title of Section/Page Goes here</h2>
+            <p>content content content </p>
+            <hr>
+            <h2 id="schools">Schools</h2>
+            <ol>
+                <li>aprgnp</li>
+            </ol>
+            <hr>
+            <h2 id="hobbies">Hobbies</h2>
+            <ul>
+                <li>Food and stff</li>
+            </ul>
+            
+
+        </div><!--/ #main-content-->
+
+        <!--Footer-------------------------------------------------------------->
+        <div id="footer" class="bg-main">
+            <p>&copy; 2022 | SE111.02 | Erick Cordon :) </p>
+            <a href="#header">Back to Top</a>
+        </div><!--/ #footer-->
+
+    </div>
+
+
+</body>
+</html>

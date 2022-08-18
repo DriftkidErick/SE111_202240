@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick Cordon">
+    <meta name="descrition" content="w3 webpage">
+    <title>EC | Bio</title>
+
+    <style>/* please reference this https://www.w3schools.com/howto/howto_css_parallax.asp https://stackoverflow.com/questions/43236327/how-to-place-text-over-a-parallax-scrolling-image */
+        #warpper{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            viewport-fit: auto;
+            max-width: 80%;
+        }
+        .bg-main {
+            background-image: url(./images/testbackground.jpg);
+            min-height: 600px;
+        
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #header{
+            
+            position:absolute;
+            z-index: auto;
+            top:200px;
+            right:350px;
+        }
+
+        a{
+            color:black;
+            background-color:transparent;
+            text-decoration: none;
+            font-size: larger;
+            font-style:normal
+        }
+        
+        h1{
+        
+            font-size: 70px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: rgba(0, 0, 0, 0.776);
+        }
+
+        hr{
+            width: 100px;
+            border: 0;
+            height: 5px;
+            background: rgb(0, 0, 0);
+            opacity: 0.2;
+            color:rgba(199, 16, 16, 0.7);
+
+        }
+        .block{
+        background-color: rgba(112, 128, 144, 0.086);
+        min-height: 200px;
+        }
+        
+        .heading{
+            font-size:40px;
+        }
+
+        #info{
+            font-size: larger;
+        }
+        #about{
+            font-size: large;
+            line-height: 30px;
+        }
+
+        #footer{
+            min-height: 250px;
+            background-color:rgba(112, 128, 144, 0.086);
+            color: aliceblue;
+        }
+        #nav{
+            min-height: 30px;
+            text-align: right;
+        
+        }
+        h2{
+            font-size: xx-large;
+        }
+        li{
+            line-height: 2;
+        }
+
+        .footer{
+            background:#ceced5;
+            color: #d3d3d3;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper"><!--This holds all the pages contents-->
+        
+        <div id="nav"> <!--Clickable links-->
+            <br>
+            <p>
+            <a href="#about"> About</a>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="schools.html"> Education</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="hobbies.html"> Hobbies</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#footer"> Footer</a>
+            </p>
+            <br>
+        </div>       
+
+        <div class="bg-main"></div>
+            
+       
+
+        <div id="blank" class="block">
+            <br>
+            <br>
+            <h2 id="heading" style="text-align:center;">ABOUT ME</h2>
+            
+            <hr>
+            <p id="info" style="text-align: center;">Below you will find a bit more information about myself, my interests, and my education </p>
+            <br>
+            <br>
+            <br>
+            <!--Use this to add random block color-->
+
+        </div> 
+
+        <div id="about">
+            
+            <img src="./images/typing.gif" height="400px" style="float: left; margin-right: 20px; margin-bottom: 20px;">
+            <br>
+            <h2>Who's Erick Cordon?</h2>
+            <p class="intro" style="padding-left:100px"><em>HELLO WORLD</em>, Welcome to my bio page. My name is <strong>Erick J Cordon</strong> and I am currently 22 years old. I am currently a <u>Software Engineering</u> student at New England Technical Institue of Technology. Since highschool I've had a little niche for coding and started learning some small code through code academy. I am hoping to become a full stack developer once I graduate. A little about me is I am an avid car enthusiat, I've been into cars since I was a young kid and currently hope to one day build one of my dream cars (an E36 BMW M3 or a Type R Civic). I'm also very into music Im super open minded to new music but my current favorite artist is <b>MF DOOM</b> with my favorite song being either "Rapp Snitch Kinishes" or "DOOMSDAY". </p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="block">
+            <br>
+            <br>
+            <h2 class="heading" style="text-align:center;">EDUCATION</h2>
+            
+            <hr>
+            <p id="info" style="text-align: center;">Below you will find my academic history </p>
+            <br>
+            <br>
+            <br>
+         </div>
+
+        <div id="school">
+            <img src="./images/Image.jpeg" style="float:right; margin-left: 20px; margin-bottom: 20px;" height="300px">
+            <h2>Academic History</h2>
+
+            <ol class="intro">
+                <li id="list"> Cranston High School East</li>
+                
+                <li>New England Technical Institue of Technology</li>
+                <ul>
+                    <li>Automotive with High Performace | Gpa: 3.4</li>
+                </ul>
+
+                <li>New England Technical Institue of Technology</li>
+                <ul>
+                    <li>Software Engineering & Web Development | </li>
+                </ul>
+            </ol>
+            
+        </div> 
+
+        <br>
+        <br>
+        <br>    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="block">
+            <br>
+            <br>
+            <h2 id="heading" style="text-align:center;">HOBBIES</h2>
+            
+            <hr>
+            <p id="info" style="text-align: center;">Below you will find my hobbies and interests </p>
+            <br>
+            <br>
+            <br>
+         </div>
+
+        <div id="hobbies">
+            <img src="images/porsche911.gif" alt="porshe" style="float: left; margin-right: 20px; margin-bottom: 20px;" height="300px">
+            
+
+            <h2>What Are My Interests?</h2>
+            <p class="intro">Hello heres a little bit more about myself. I'm an avid car enthusiat. Personally grew up working on Toyota's, Honda's and dreaming about a vintage air-cooled Porshe 911. Some of my favorite music genres include rap music, latin music and even the ocational lofi.</p>
+
+            <br>
+            
+            <div id="other">
+
+                <p>Some of my interest</p>
+                <ul>
+                    <li>Sneakers</li>
+                    <li>Sim Racing</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="footer" class="footer"> <!--Bottom of the page-->
+            <div class="footer-content">
+                <div class="footer-about"></div>
+                <div class="footer-section-links"></div>
+                <div class="footer-section-contact"></div>
+            </div>
+            <footer >
+                <br>
+                <a href="#nav">Back to Top</a>
+                <br>
+                <br>
+            </footer>   
+        </div> 
+
+
+    </div>
+
+</body>
+</html>
+

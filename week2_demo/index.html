@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D2 | Demo</title><!-- tab name in browser-->
+
+    <style>
+        /*we are now writting in CSS*/
+        /*CSS SYNTAX
+            selector {
+                property: value;
+                property: value;
+            }
+
+        */
+
+        /* Selector options: TAG TYPE (), ID (), CLASS () */
+
+        body {/*applies to body element (including content!)*/
+            background-color: lightgray;
+
+        }
+
+        h2{
+            font-family:helvetica, sans-serif;
+        }
+
+        div{
+            border:1px solid black;
+            margin:20px; /*adds space between element and neighnoring elements (top, right, bottom, left) */
+            background-color: ghostwhite;
+        }
+
+        #characters {
+            border: 1px solid red;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- this is where the content goes!-->
+    <h1>Erick Cordon</h1>
+    <hr>
+
+    <div id="characters">
+        <h2>Favorite Characters</h2>
+
+        <ol>
+            <li>Chopper</li>
+            <li>Titan</li>
+            <li>Taco Bell Dog</li>
+        </ol>
+    </div>
+
+    <div id="tv_shows">   
+        <h2>Favorite Shows</h2>
+        <ul>
+            <li>One Piece</li>
+            <li>Chowder</li>
+            <li>Brooklyn 99</li>
+        </ul>
+        
+        <img src="images/stormsEnd.jpg" alt="Storm's end of spring time illustration - castle by the sea" width="250px">
+        <!-- Relaive path is used in the source attribute-->
+    </div>
+    <hr>
+
+    <p>HEY! I'm Erick and i'm currently enrolled in software engineering.</p>
+
+    <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2003/06/05/dacda177-a642-11e2-a3f0-029118418759/thumbnail/1200x630/c5bdb813192772aea2372e0b49047359/image557042x.jpg" alt="taco bell dog" width="250px">
+    <!-- absolute path for image (full url)-->
+
+    <!--links - external = outside of our domain, internal = in our roo folder, in-page = jumping to a section in the current html page-->
+
+    <a href="https://www.youtube.com/watch?v=M8sZ1DWsAHE" target="_blank">Do you want taco bell?</a>
+</body>
+</html>
