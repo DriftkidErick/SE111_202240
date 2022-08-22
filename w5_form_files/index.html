@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <h1>Birthday Party Registration Form</h1>
+
+    <!--Build your Table and Form here-->
+    <form method="GET" action="confirm.html">
+
+        <table>
+
+            <thead><!--Column headers for table in form-->
+                <tr>
+                    <td>
+                        <h3>Label</h3>
+                    </td>
+
+                    <td>
+                        <h3>Form Feilds</h3>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><!--Parents name-->
+
+                    <td>
+
+                        <label for="fName">Parent/Guardian Name</label>
+
+                    </td>
+
+                    <td>
+
+                        <input type="text" name="fName" id="fName" placeholder="First Name...">
+                        <br>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name...">
+
+                    </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><!--Kid's Name-->
+                            <lable for="cname">Child's Name</lable>
+                        </td>
+
+                        <td>
+                            <input type="text" name="cname" id="cname" placeholder="Child's Name...">
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td><!--Kids Age-->
+                            <label for="cage">Childs's Age</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="cage" id="cage" placeholder="Age...">
+                        </td>
+
+                    </tr>
+
+                    <tr><!--Start of date and time section-->
+                        
+                        <td>
+                            <h2>Date And Time</h2>
+                        </td>
+
+                        <td>
+                            <h2>    </h2><!--Left blank to create a blank square-->
+                        </td>
+
+                    </tr>
+
+                    <tr> <!--Date-->
+                        <td>
+                            <label for="date">Date</label>
+                        </td>
+                        <td>
+                            <input type="date" name="date" id="date">
+                        </td>
+
+                    </tr>
+
+                    <tr><!--Time-->
+                        <td>
+                            <label for="stime">Start time</label>
+                        </td>
+
+                        <td>
+                            <input type="time" name="stime" id="stime">
+                        </td>
+                    </tr>
+
+                    <tr><!--Number of Guest-->
+
+                        <td>
+                            <label for="numguest">Number of Guest</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="numquest" id="numguest">
+                        </td>
+
+                    </tr>
+
+                    <tr><!--start of food section-->
+
+                        <td>
+                            <h2>Food</h2>
+                        </td>
+
+                        <td>
+                            <h2>   </h2><!--Left blank of purpose to create a blank square-->
+                        </td>
+
+                    </tr>
+
+                    <tr><!--Drinks Size-->
+
+                        <td>
+
+                        <label for="size">Size</label>
+
+                        </td>
+
+                        <td>
+
+                            <input type="radio" name="size1" value="small">Sm 
+
+                            <input type="radio" name="size2" value="medium">Md 
+
+                            <input type="radio" name="size3" value="Large">Lg 
+                        </td>
+
+                    </tr>
+
+                    <tr><!--Drinks-->
+
+                        <td>
+                            <label for="drink">Drink</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="drink1" value="coke">Coke <br>
+
+                            <input type="checkbox" name="drink2" value="sprite">Sprite <br>
+
+                            <input type="checkbox" name="drink3" value="punch">Fruit Punch <br>
+
+                            <input type="checkbox" name="drink4" value="lemonade">Lemonade <br>
+
+                            <input type="checkbox" name="drink5" value="tea">Iced Tea
+
+                        </td>
+
+                    </tr>
+
+                    <tr><!--Cake Section-->
+
+                        <td>
+
+                            <lable for="cake">Cake</lable>
+
+                        </td>
+
+                        <td>
+                            <select name="cake">
+
+                                <option value="Chocolate">Chocolate</option>
+
+                                <option value="vanilla">Vanilla</option>
+
+                                <option value="bring">Bring Your Own</option>
+
+                            </select>
+
+                        </td>
+                        
+                    </tr>
+
+
+                </tbody>
+                <!-- <textarea name="comments" id="comments" rows="10" cols="21" placeholder="Enter your commments here...."></textarea> -->
+
+
+</body>
+</html>
