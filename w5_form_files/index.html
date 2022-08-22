@@ -38,15 +38,15 @@
 
                     <td>
 
-                        <label for="fName">Parent/Guardian Name</label>
+                        <label for="fname">Parent/Guardian Name</label>
 
                     </td>
 
                     <td>
 
-                        <input type="text" required name="fName" id="fName" placeholder="First Name...">
+                        <input type="text" required maxlength="20" name="gfirst" id="fname" placeholder="First Name...">
                         <br>
-                        <input type="text" required name="lname" id="lname" placeholder="Last Name...">
+                        <input type="text" required maxlength="20" name="lname" id="l_name" placeholder="Last Name...">
 
                     </td>
 
@@ -58,18 +58,18 @@
                         </td>
 
                         <td>
-                            <input type="text" required name="cname" id="cname" placeholder="Child's Name...">
+                            <input type="text" required name="c_name" id="cname" placeholder="Child's Name...">
                         </td>
                     </tr>
 
                     <tr>
 
                         <td><!--Kids Age-->
-                            <label for="cage">Childs's Age</label>
+                            <label for="c_age">Childs's Age</label>
                         </td>
 
                         <td>
-                            <input type="text" required name="cage" id="cage" placeholder="Age...">
+                            <input type="number" required name="cage" id="c_age" placeholder="Age...">
                         </td>
 
                     </tr>
@@ -102,7 +102,7 @@
                         </td>
 
                         <td>
-                            <input type="time" required name="stime" id="stime">
+                            <input type="time" required name="stime" id="s_time">
                         </td>
                     </tr>
 
@@ -113,7 +113,7 @@
                         </td>
 
                         <td>
-                            <input type="text" name="numquest" id="numguest">
+                            <input type="text" name="numquest" id="num_guest">
                         </td>
 
                     </tr>
@@ -244,5 +244,6 @@
 
                 </tbody>
         </table>
+    </form>
 </body>
 </html>
