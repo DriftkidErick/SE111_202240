@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 | JS Demo #1</title>
+</head>
+<body>
+    <!--We should have some sort of html in he page before writing JS-->
+
+    <h1>Week 6 Intro Demo | Javascript</h1> <!--heading-->
+
+    <a href= "index.html">Demo #1</a> <a href="demo2.html">Demo #2</a> <!--Links to first and second demo-->
+
+    <!---In document JS-->
+    <script>
+        //everything in here must be writtin in JS (Just like pythons # commenting system)
+        //here is a single line comment in JS
+
+        //in JS, all vars must be declared - use the keyword 'var'
+
+        //console.log(name) | tested and moved
+
+        var name //this is decalaration ONLY; 'name' does not have a value
+
+        name = "CK" // since name is declared, we can now assign value to it 
+
+        //var num3 = num1 + num2 | tested and moved
+
+        //combination - declare and then assign on one line
+
+        var num1 = 10
+        var num2 = 7
+
+        // cannot use num1 and num2 untill they have value assigned
+        var num3 = num1 + num2
+        console.log(num3)
+
+        //alert() createsa a pop-up window in the browser page to display data
+
+        alert("Hello World!")//Need to hit the OK button to continue
+        console.log("Hello World!")
+
+        //`` creates a literal string --> works easier but similar to Python's .format()
+        //to display stored value with a message: `Message ${varname}`
+
+        alert(`The Sum is: ${num3}`)
+
+        //Input -- prompt user for values to be used
+        //make sure to store the value for later use!
+        var lname = prompt(`Hi ${name}! \nEnter you name: `) //\n creates a newline 
+
+        console.log(`Last Name: ${lname}`)//to developer |stores info in console
+        alert(`Your Last name is: ${lname}`)//for user  
+
+        //All data from prompt is a string
+        //we must convert to Number() if wanting to do math the right way! | Number() MUST BE IN CAPS
+
+        var newNum = Number(prompt(`Enter a number to multiply by 7: `))
+
+        //convert to a Number()
+        //newNum = Number(newNum) you can use this instead of Number(prompt)
+
+        console.log(newNum)
+
+        var multi = newNum * 7
+        
+        console.log(`THe multi value is: ${multi}`)//in console, for testing
+
+        alert(`${newNum} * 7 = ${multi.toFixed(2)}`) //seen in browser | the .toFixed(2) is to round to decimal | the 2 is to the second decimal place
+        
+
+
+
+
+    </script>
+
+
+</body>
+</html>
