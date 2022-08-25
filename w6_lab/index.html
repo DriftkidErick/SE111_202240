@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eick Cordon">
+    <title>W6 | Paycheck Calculator</title>
+</head>
+<body>
+    <h1>Welcome to the PayCheck Calculator</h1>
+
+    <script>
+
+        //gross = rate * hours *2 (its bi-weekly)
+        //taxAmnt = gross * tax
+        //net = gross - taxAmnt
+
+        alert(`Hello World!!! \nWelcome to the bi-weekly paycheck calculator!`)//A welcome pop-up to the pages
+        
+        var rate = Number(prompt(`Enter your current hourly rate: `))
+        console.log(rate)// this stores hourly rate
+
+        var hours = Number(prompt(`Please enter the number of hours you work per week: `))
+        console.log(hours)//stores worked hours
+
+        var tax = .2 //tax rate is 20%
+
+        var gross = (rate * hours) * 2 //the 2 is used to get bi-weekly amount
+        console.log(`The gross pay is: ${gross} `) 
+
+        var taxAmnt = gross * tax //tax amount based off of gross pay
+        console.log(`The tax amount is: ${taxAmnt}`)
+
+        var net = gross - taxAmnt //total pay after taxes removed
+        console.log(`The net amout is: ${net}`)
+
+        alert(`Gross Pay: $${gross.toFixed(2)} \nUncle Sam's Share: $${taxAmnt.toFixed(2)} \nNet Pay: $${net.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
