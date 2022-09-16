@@ -9,7 +9,10 @@
 </head>
 
 <body>
-</body>
+
+	<h1>Week 9 | Creating Elements Lab </h1>
+
+
 
 <script type="text/javascript">
 	//Use this Array of objects to complete the assignment.
@@ -46,12 +49,17 @@
 
 	var body = document.querySelector(`body`)
 
+	console.log(body)//shows value stored
+    console.dir(body)//shows value as an object with acess to its properties and values
+
 	for(let i = 0; i < people.length; i++)
 	{
 		var tempDiv = document.createElement(`div`)
 		tempDiv.setAttribute(`id`, i )
 
 		tempDiv.setAttribute(`class`, `border`)
+
+		console.log(tempDiv)
 
 		for(key in people[i])
 		{
@@ -72,5 +80,7 @@
 
 	
 </script>
+
+</body>
 
 </html>
